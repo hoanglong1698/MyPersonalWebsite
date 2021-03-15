@@ -10,7 +10,7 @@ export const Skill = styled.div`
 `;
 
 export const Logo = styled.div`
-  ${tw`ml-32 flex items-center mr-auto text-indigo-900 hover:text-indigo-900 mb-6`};
+  ${tw`flex items-center mr-auto text-indigo-900 hover:text-indigo-900 mb-6`};
 `;
 
 export const Text = styled.h1`
