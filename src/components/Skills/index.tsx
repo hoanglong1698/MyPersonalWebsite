@@ -5,6 +5,8 @@ import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import ProgressBar from 'components/ui/ProgressBar';
 
+import Img from 'gatsby-image';
+import { ImageSharpFluid } from 'helpers/definitions';
 import { SectionTitle } from 'helpers/definitions';
 
 import * as Styled from './styles';
@@ -15,6 +17,12 @@ interface Skill {
     frontmatter: {
       title: string;
       percentage: number;
+      link: string;
+      cover: {
+        childImageSharp: {
+          fluid: ImageSharpFluid;
+        };
+      };
     };
   };
 }
@@ -35,6 +43,14 @@ const Skills: React.FC = () => {
             frontmatter {
               title
               percentage
+              link
+              cover {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
@@ -52,12 +68,20 @@ const Skills: React.FC = () => {
         {skills.map((item) => {
           const {
             id,
-            frontmatter: { title, percentage }
+            frontmatter: { title, percentage, cover, link }
           } = item.node;
 
           return (
             <Styled.Skill key={id}>
-              <ProgressBar title={title} percentage={percentage} />
+              {/* <ProgressBar title={title} percentage={percentage} /> */}
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <Styled.Logo>
+                  <Styled.Image>
+                    <Img fluid={cover.childImageSharp.fluid} alt={title} />
+                  </Styled.Image>
+                  <Styled.Text>{title}</Styled.Text>
+                </Styled.Logo>
+              </a>
             </Styled.Skill>
           );
         })}

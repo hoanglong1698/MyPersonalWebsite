@@ -17,6 +17,7 @@ interface Education {
       degree: string;
       startDate: string;
       endDate: string;
+      link: string;
     };
   };
 }
@@ -43,6 +44,7 @@ const Education: React.FC = () => {
               degree
               startDate
               endDate
+              link
             }
           }
         }
@@ -61,7 +63,7 @@ const Education: React.FC = () => {
         const {
           id,
           html,
-          frontmatter: { university, degree, startDate, endDate }
+          frontmatter: { university, degree, startDate, endDate, link }
         } = item.node;
 
         return (
@@ -72,6 +74,7 @@ const Education: React.FC = () => {
             content={<FormatHtml content={html} />}
             startDate={startDate}
             endDate={endDate}
+            link={link}
           />
         );
       })}

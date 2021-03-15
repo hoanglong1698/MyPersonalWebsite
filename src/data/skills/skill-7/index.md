@@ -1,5 +1,7 @@
 ---
 category: 'skills'
-title: 'Photoshop'
-percentage: 58
+title: 'Vuejs'
+percentage: 100
+cover: './cover.png'
+link: 'https://vuejs.org/'
 ---

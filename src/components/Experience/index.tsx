@@ -17,6 +17,7 @@ interface Experience {
       position: string;
       startDate: string;
       endDate: string;
+      link: string;
     };
   };
 }
@@ -43,6 +44,7 @@ const Experience: React.FC = () => {
               position
               startDate
               endDate
+              link
             }
           }
         }
@@ -61,7 +63,7 @@ const Experience: React.FC = () => {
         const {
           id,
           html,
-          frontmatter: { company, position, startDate, endDate }
+          frontmatter: { company, position, startDate, endDate, link }
         } = item.node;
 
         return (
@@ -72,6 +74,7 @@ const Experience: React.FC = () => {
             content={<FormatHtml content={html} />}
             startDate={startDate}
             endDate={endDate}
+            link={link}
           />
         );
       })}

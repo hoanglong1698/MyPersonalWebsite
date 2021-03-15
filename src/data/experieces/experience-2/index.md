@@ -1,9 +1,12 @@
 ---
 category: 'experiences'
 company: 'Mona Media'
-position: 'UI/UX Designer'
+position: 'UI/UX Design Intern'
 startDate: 'December 2019'
 endDate: 'Febuary 2020'
+link: 'https://mona.media/'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Create UI for web pages and mobile apps using Adobe Photoshop.
+
+Amend designs after feedback.

@@ -1,5 +1,7 @@
 ---
 category: 'skills'
-title: 'CSS'
-percentage: 73
+title: 'Redux'
+percentage: 100
+cover: './cover.png'
+link: 'https://redux.js.org/'
 ---

@@ -1,5 +1,7 @@
 ---
 category: 'skills'
 title: 'TypeScript'
-percentage: 76
+percentage: 100
+cover: './cover.png'
+link: 'https://www.typescriptlang.org/'
 ---

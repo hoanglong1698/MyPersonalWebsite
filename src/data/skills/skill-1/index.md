@@ -1,5 +1,7 @@
 ---
 category: 'skills'
-title: 'HTML'
-percentage: 60
+title: 'React Native'
+percentage: 100
+cover: './cover.png'
+link: 'https://reactnative.dev/'
 ---

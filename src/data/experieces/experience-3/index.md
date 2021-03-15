@@ -4,8 +4,7 @@ company: 'Ban Vien Company'
 position: 'Mobile Developer'
 startDate: 'December 2020'
 endDate: 'Present'
+link: 'http://banvien.com/'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Create mobile apps for both iOS and Android using React Native.
